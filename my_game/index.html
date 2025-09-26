@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя первая игра</title>
+    <style>
+        body {
+            /* Просто центрируем игру на экране */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #gameCanvas {
+            /* Добавляем тень для красоты */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Холст (Canvas) — это область, на которой мы рисуем игру -->
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <!-- Подключаем наш скрипт -->
+    <script src="game.js"></script>
+</body>
+</html>
